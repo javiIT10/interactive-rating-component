@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card {
+    @apply bg-[#1E2730] rounded-lg m-auto p-6 sm:p-8 mt-[155px] sm:mt-[195px] w-[328px] sm:w-[415px];
+  }
+
+  .title {
+    @apply text-white font-bold text-[21px] sm:text-[24px] sm:mb-3;
+  }
+
+  .paragraph {
+    @apply text-light-grey mb-6;
+  }
+
+  .btn {
+    @apply flex justify-center items-center font-bold transition-colors duration-200;
+  }
+
+  .btn-number {
+    @apply h-[45px] sm:h-[50px] w-[45px] sm:w-[50px] rounded-full bg-dark-blue text-light-grey hover:bg-orange hover:text-very-dark-blue;
+  }
+
+  .btn-submit {
+    @apply h-[45px] w-full mt-5 rounded-3xl uppercase bg-orange text-very-dark-blue hover:bg-white;
+  }
+
+  .btn-active {
+    @apply text-very-dark-blue bg-white;
+  }
+}
